@@ -1,0 +1,648 @@
+/**mainpage**/
+*{
+   margin:0;
+   font-family: Arial;
+   border: border-box;
+}
+
+/**firstbar**/
+
+.topbar{
+    background-color: #131921;
+    height:60px;
+    color: rgb(254, 253, 253);
+    display: flex;
+    background-size: cover;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+/**background**/
+
+.bg-container{
+    background-color: #e3e6e6;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+/**logo**/
+
+.logo{
+    height: 50px;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/dtf35zg3c/image/upload/v1694023911/amazon_logo_x75dnf.png");
+    background-size: cover;
+}
+
+.logobox{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/**address**/
+
+.addressbox{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom:8px;
+    padding-right: 5px;
+}
+
+.addressicon{
+   margin-right: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+}
+
+.addresshead{
+   font-size: 12px; 
+}
+
+.addresspara{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+/**border**/
+
+.border{
+    border: 1.2px solid transparent;
+    border-radius: 5px;
+}
+
+.border:hover{
+    border:1.2px solid white;
+}
+
+/**searchbox**/
+
+.searchbar{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #131921;
+    width: 590px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+.searchbarselect{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 43px;
+    border: none;
+    background-color: #d4d4d4;
+}
+.searchicon{
+    background-color: #f3a847;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbarinput{
+   width: 501px;
+   height: 38px;
+   border: none;
+   font-size: 1rem;
+}
+
+/**country**/
+
+.country{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    padding: 5px;
+}
+
+.countryselect{
+    background-color: #131921;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/**box items**/
+
+.box{
+    color: white;
+    background-color: #131921;
+    padding-top: 7px;
+    padding-left:5px;
+    padding-right: 5px;
+    margin: 5px;
+}
+
+.boxheadtop{
+    font-size: 12px;
+}
+
+.boxparatop{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/**cart**/
+
+.cartbox{
+    color: white;
+    background-color: #131921;
+    display: flex;
+    padding-top: 22px;
+    padding-left:5px;
+    padding-right: 5px;
+    margin: 5px;
+}
+
+/**secondbar**/
+
+.secondbar{
+   background-color: #232f3e;
+   height:40px;
+   color: rgb(254, 253, 253);
+   display: flex;
+   background-size: cover;
+   width: 100vw;
+}
+
+/**menu**/
+
+.menubox{
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 20px;
+    width: 40px;
+}
+
+.menupara{
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+/**secondbarcontents**/
+
+.dealsbox{
+    background-color: #232f3e;
+    color: white;
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+.dealspara{
+    font-size: 14px;
+}
+
+.couroselimages{
+    height: 300px;
+    
+}
+
+.courosel{
+    margin: 1px;
+}
+
+/**slides**/
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    width: 100vw ;
+    left: calc(0% - 0px);
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
+
+  .couroselouter{
+    height: 8%;
+    width: 100vw;
+    margin-bottom: 19%;
+  }
+/**message**/
+
+.message{
+    color:black;
+    background-color: white;
+    height: 50px;
+    
+    
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+  /**boxes**/
+
+.boxcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e3e6e6;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.boxes{
+    height: 450px;
+    width: 420px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.boxhead{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.boxcontents1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+.boxcontents2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+
+.boxcontentimg{
+    height: 160px;
+    width: 190px;
+}
+
+.imgcon{
+    height: 140px;
+    width: 190px;
+}
+
+.seemore{
+    margin-top: 20px;
+    color: #188ac8;
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+.boximg2{
+   display: flex;
+}
+
+.boximg3{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imgty2{
+    height: 320px;
+    width: 420px;
+}
+
+.imgty3{
+    height: 320px;
+    width: 375px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.shopnow{
+    margin-left:20px;
+    margin-top: 10px;
+    color: #188ac8;
+    font-size: 15px;
+}
+
+.imgty4{
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 50px;
+    height:260px;
+    width: 320px;
+}
+
+.signinbtn{
+    background-color:#f7ca00;
+    width: 355px;
+    height: 35px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.boxes1{
+    height: 450px;
+    width: 370px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    background-color: #e3e6e6;
+    border-radius: 10px;
+}
+
+/**sign in box**/ 
+
+.signcon{
+    background-color: white;
+    background-size: cover;
+    height: 163px;
+    width: 370px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.signconhead{
+    color:black;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.dechead{
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.sm{
+   padding-top: 20px;
+}
+
+.rate{
+    color: black;
+    font-size: 12px;
+}
+
+.signinsec{
+    height: 160px;
+    
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    background-color:#FAF9F5;
+    border: 0.5px solid grey;
+    text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    align-items: center;
+}
+
+.signouter{
+   
+    
+    background-color: white;
+}
+
+.btn{
+    height: 30px;
+    width: 250px;
+    background-color: #f3a847;
+    border: none;
+    border-radius: 5px;
+}
+
+.signfont{
+    font-size: 14px;
+    color: black;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.start{
+    font-size: 12px;
+    color: #188ac8;
+}
+
+/**back to top**/
+
+.back{
+    background-color: #485769;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**others section**/
+
+.others{
+    
+    background-color: #232f3e;
+    background-size: cover;
+    color: white;
+}
+
+.type{
+    list-style-type: none;
+}
+
+.othershead{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.list{
+    margin-top: 10px;
+}
+
+.otherscon{
+    justify-content: space-evenly;
+    display: flex;
+    padding: 50px;
+}
+
+/**countryselect**/
+
+.others2{
+    
+    background-color: #232f3e;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6px;
+    height: 130px;
+}
+
+.logobox2{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.logo2{
+    background-image: url("https://res.cloudinary.com/dtf35zg3c/image/upload/v1694023911/amazon_logo_x75dnf.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.obox{
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.opara{
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.others3{
+    
+    background-color: #131921;
+    background-size: cover;
+    color: white;
+    height: 650px;
+
+}
+
+.columnbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.clbox1{
+    margin-top: 40px;
+}
+
+.clbox2{
+    margin-top: 30px;
+}
+
+.clboxhead{
+    color: white;
+    font-size:15px ;
+    font-weight: normal;
+}
+
+.clboxpara{
+    color: grey;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.copyright{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.crpara{
+    margin-left: 5px;
+}
