@@ -1,3 +1,3 @@
 # Amazon-Cloning
-Hello, guys here is the Amazon clone that I created. I have only used HTML and CSS.
+Hello, guys here is the Amazon clone that I created.
 I hope it will help you.
